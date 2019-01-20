@@ -2,6 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-cover:
-author:
+categories:
+cover: ../../../../img/contact-bg.jpg
+author: sulenn
 ---
