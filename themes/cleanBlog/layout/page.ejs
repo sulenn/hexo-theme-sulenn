@@ -3,6 +3,10 @@
     var title = '';
     var isTagIndex = page.type === 'tags' || page.type === 'tag';
     var isCategoryIndex = page.type === 'categories' || page.type === 'category';
+
+    <!-- 这个变量用于判断是否是about页面 -->
+    var isAbout = page.type === 'about';  
+
     if (isTagIndex) {
         items = site.tags;
         title = __('tags');
@@ -13,7 +17,7 @@
 %>
 
 <% if (isTagIndex || isCategoryIndex) { %>
-    <header class="intro-header" style="background-image: url('<%- theme.index_cover %>')">
+    <header class="intro-header" style="background-image: url('<%- page.cover %>')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -36,6 +40,11 @@
             </div>
         </div>
     </div>
+<!-- else if 用于判断about页面 -->
+<% } else if (isAbout) { %>
+    <section class="main">
+        <%- partial('_partial/about', {item: page}) %>
+    </section>
 <% } else { %>
     <section class="main">
         <%- partial('_partial/article-full', {item: page}) %>

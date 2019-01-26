@@ -13,7 +13,10 @@ menu:
 menu_title: qiubing
 
 # URL of the Home page image
-index_cover: /img/home-bg.jpg
+index_cover: /img/5.jpg
+
+# 归档页面的封面
+archives_cover: /img/10.jpg
 
 # Default post title
 default_post_title: Untitled
