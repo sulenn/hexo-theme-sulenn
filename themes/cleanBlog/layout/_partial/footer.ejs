@@ -71,12 +71,20 @@
                             </a>
                         </li>
                     <% } %>
+
                 </ul>
-                <p class="copyright text-muted">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br></p>
-                <p class="copyright text-muted">Powerd by <a target="_blank" href="https://hexo.io/zh-cn/">Hexo</a> &nbsp;&nbsp; Theme by <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog</a></p>
+                
+                <p class="copyright text-muted">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> &nbsp;&nbsp;  <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv"></span></span> &nbsp;&nbsp; 总字数  <span class="post-count"><%= totalcount(site) %></span><br></p>
+                <!-- <p class="copyright text-muted">
+                    <span id="busuanzi_container_site_pv">访问量<span id="busuanzi_value_site_pv"></span></span>
+                </p> -->
+                <p class="copyright text-muted">框架 <a target="_blank" href="https://hexo.io/zh-cn/">Hexo</a> &nbsp;&nbsp; 主题 <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog</a></p>
                 <!-- <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p> -->
                 <!-- <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p> -->
             </div>
         </div>
     </div>
 </footer>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>

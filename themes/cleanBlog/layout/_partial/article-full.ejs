@@ -22,6 +22,10 @@
                         <% if(item.date) { %>
                             <%= item.date.format(config.date_format) %>
                         <% } %>
+                        <!-- <span id="busuanzi_container_page_pv">with Reading <span id="busuanzi_value_page_pv"></span></span> -->
+                    </span>
+                    <span class="meta">
+                        
                     </span>
                 </div>
             </div>
@@ -33,6 +37,7 @@
 <article>
     <div class="container">
         <div class="row">
+            
 
             <!-- Tags and categories -->
            <% if (item.categories && item.categories.length || item.tags && item.tags.length) { %>
@@ -57,6 +62,12 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <!-- 字数和阅读量 -->
+                <span class="post-count" style="font-size: 16px">字数：<%= wordcount(item.content) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="busuanzi_container_page_pv" style="font-size: 16px">阅读量：<span id="busuanzi_value_page_pv"></span></span>
+
+
                 <%- item.content %>
 
                 <% if(theme.addthis) { %>

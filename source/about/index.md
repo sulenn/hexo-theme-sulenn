@@ -9,6 +9,12 @@ type: about
 
 研一萌新小白一只！研究方向包括 "区块链" 、 "分布式系统"等
 
+## 社交平台
+
+[Github](https://github.com/sulenn)
+
+[CSDN](https://me.csdn.net/qiubingcsdn)
+
 ## 兴趣爱好
 
 喜欢篮球、足球等各种球类运动，不过打的都不怎么好，O(∩_∩)O哈哈哈~
