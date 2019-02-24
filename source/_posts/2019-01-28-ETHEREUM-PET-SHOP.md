@@ -1,6 +1,6 @@
 ---
 title: ETHEREUM PET SHOP
-cover: ../../../../img/contact-bg.jpg
+cover: ../../../../img/7.jpg
 author: sulenn
 date: 2019-01-28 08:52:20
 tags: 
