@@ -79,6 +79,9 @@ theme: cleanBlog
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:sulenn/sulenn.github.io.git
+  # repo: git@github.com:sulenn/sulenn.github.io.git
+  repo: 
+        qiubing.top: git@www.qiubing.top:/home/git/repos/blog.git,master
+        github: git@github.com:sulenn/sulenn.github.io.git,master
   branch: master
 
